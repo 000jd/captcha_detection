@@ -1,0 +1,20 @@
+
+Benchmarks complete for runs/train/weights/best.pt on data/processed/dataset.yaml at imgsz=640 (24.25s)
+Benchmarks legend:  - ✅ Success  - ❎ Export passed but validation failed  - ❌️ Export failed
+                   Format Status❔  Size (MB) metrics/mAP50-95(B) Inference time (ms/im)     FPS
+0                 PyTorch       ✅        5.2              0.9529                   3.31  302.34
+1             TorchScript       ✅       10.4              0.9515                    1.5  667.44
+2                    ONNX       ❌        0.0                   -                      -       -
+3                OpenVINO       ❌        0.0                   -                      -       -
+4                TensorRT       ❌        0.0                   -                      -       -
+5                  CoreML       ❌        0.0                   -                      -       -
+6   TensorFlow SavedModel       ❌        0.0                   -                      -       -
+7     TensorFlow GraphDef       ❌        0.0                   -                      -       -
+8         TensorFlow Lite       ❌        0.0                   -                      -       -
+9     TensorFlow Edge TPU       ❌        0.0                   -                      -       -
+10          TensorFlow.js       ❌        0.0                   -                      -       -
+11           PaddlePaddle       ❌        0.0                   -                      -       -
+12                    MNN       ❌        0.0                   -                      -       -
+13                   NCNN       ❌        0.0                   -                      -       -
+14                    IMX       ❌        0.0                   -                      -       -
+15                   RKNN       ❌        0.0                   -                      -       -
