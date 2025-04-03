@@ -43,16 +43,16 @@ class MultiCAPTCHADetector:
             
         # Import preprocessing utilities
         try:
-            from captcha_detection.utils.captcha_transform import CAPTCHATransform
-            from captcha_detection.utils.captcha_preprocessor import CAPTCHAPreprocessor
+            from captcha_detection.src.utils.captcha_transform import CAPTCHATransform
+            from captcha_detection.src.utils.captcha_preprocessor import CAPTCHAPreprocessor
             self.preprocessor = CAPTCHAPreprocessor()
             self.transformer = CAPTCHATransform()
         except ImportError:
             # Fallback to local imports if package structure is not available
             import sys
             sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-            from utils.captcha_transform import CAPTCHATransform
-            from utils.captcha_preprocessor import CAPTCHAPreprocessor
+            from src.utils.captcha_transform import CAPTCHATransform
+            from src.utils.captcha_preprocessor import CAPTCHAPreprocessor
             self.preprocessor = CAPTCHAPreprocessor()
             self.transformer = CAPTCHATransform()
     
